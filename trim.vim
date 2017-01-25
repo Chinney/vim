@@ -1,3 +1,3 @@
 function! Trim()
-  silent %s/\s\+$//ge
+  silent %s/\s\+$//e
 endfunction
