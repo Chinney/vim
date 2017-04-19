@@ -75,3 +75,8 @@ source ~/.vim/wmake.vim
 source ~/.vim/gtags.vim
 
 source ~/.vim/filetype.vim
+
+map <C-[>[32;2u <Space>
+
+autocmd VimEnter * NERDTree
+autocmd VimEnter * Tagbar
