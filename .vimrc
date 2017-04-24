@@ -14,11 +14,15 @@ Plugin 'tpope/vim-fugitive' " the ultimate git helper
 Plugin 'bling/vim-airline'
 Plugin 'nfvs/vim-perforce'
 Plugin 'majutsushi/tagbar'
+Plugin 'Yggdroot/indentLine'
 Helptags
 
 let g:airline_powerline_fonts = 1
 let g:airline_theme = 'behelit'
 let g:tagbar_ctags_bin = '~/bin/ctags/ctags'
+let g:indentLine_color_term = 239
+let g:indentLine_char = '|'
+let g:indentLine_enabled = 1
 
 call vundle#end()
 filetype plugin indent on
@@ -38,7 +42,7 @@ if exists( '+colorcolumn' )
  set colorcolumn=111
 endif
 
-set lcs=tab:>-,eol:$,trail:.
+set lcs=tab:>-,eol:¬,trail:.
 set list
 
 set is
