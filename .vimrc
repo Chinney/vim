@@ -15,6 +15,7 @@ Plugin 'bling/vim-airline'
 Plugin 'nfvs/vim-perforce'
 Plugin 'majutsushi/tagbar'
 Plugin 'Yggdroot/indentLine'
+Plugin 'gko/vim-coloresque'
 Helptags
 
 let g:airline_powerline_fonts = 1
