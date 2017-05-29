@@ -27,9 +27,6 @@ let g:indentLine_color_term = 239
 let g:indentLine_char = '|'
 let g:indentLine_enabled = 1
 
-let g:rbpt_max = 16
-let g:rbpt_loadcmd_toggle = 0
-
 call vundle#end()
 filetype plugin indent on
 syntax on
@@ -88,10 +85,10 @@ source ~/.vim/filetype.vim
 
 map <C-[>[32;2u <Space>
 
-autocmd VimEnter * RainbowParenthesesActivate
-autocmd VimEnter * RainbowParenthesesLoadBraces
-autocmd VimEnter * RainbowParenthesesLoadRound
-autocmd VimEnter * RainbowParenthesesLoadSquare
+au VimEnter * RainbowParenthesesToggle
+au Syntax * RainbowParenthesesLoadRound
+au Syntax * RainbowParenthesesLoadSquare
+au Syntax * RainbowParenthesesLoadBraces
 
 autocmd VimEnter * NERDTree
 autocmd VimEnter * Tagbar
