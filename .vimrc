@@ -45,7 +45,7 @@ if exists( '+colorcolumn' )
  set colorcolumn=111
 endif
 
-set lcs=tab:>-,eol:¬,trail:.
+set lcs=tab:»-,eol:¬,trail:.
 set list
 
 set is
