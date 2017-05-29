@@ -16,6 +16,8 @@ Plugin 'nfvs/vim-perforce'
 Plugin 'majutsushi/tagbar'
 Plugin 'Yggdroot/indentLine'
 Plugin 'gko/vim-coloresque'
+Plugin 'wkentaro/conque.vim'
+Plugin 'kien/rainbow_parentheses.vim'
 Helptags
 
 let g:airline_powerline_fonts = 1
@@ -24,6 +26,9 @@ let g:tagbar_ctags_bin = '~/bin/ctags/ctags'
 let g:indentLine_color_term = 239
 let g:indentLine_char = '|'
 let g:indentLine_enabled = 1
+
+let g:rbpt_max = 16
+let g:rbpt_loadcmd_toggle = 0
 
 call vundle#end()
 filetype plugin indent on
@@ -82,6 +87,11 @@ source ~/.vim/gtags.vim
 source ~/.vim/filetype.vim
 
 map <C-[>[32;2u <Space>
+
+autocmd VimEnter * RainbowParenthesesActivate
+autocmd VimEnter * RainbowParenthesesLoadBraces
+autocmd VimEnter * RainbowParenthesesLoadRound
+autocmd VimEnter * RainbowParenthesesLoadSquare
 
 autocmd VimEnter * NERDTree
 autocmd VimEnter * Tagbar
