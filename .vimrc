@@ -18,6 +18,7 @@ Plugin 'Yggdroot/indentLine'
 Plugin 'gko/vim-coloresque'
 Plugin 'wkentaro/conque.vim'
 Plugin 'kien/rainbow_parentheses.vim'
+Plugin 'gabrielelana/vim-markdown'
 Helptags
 
 let g:airline_powerline_fonts = 1
