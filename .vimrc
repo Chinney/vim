@@ -98,5 +98,3 @@ au Syntax * RainbowParenthesesLoadBraces
 
 autocmd VimEnter * NERDTree
 autocmd VimEnter * Tagbar
-
-:command Bash :call ConqueTermVSplit() bash
