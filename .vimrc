@@ -56,17 +56,22 @@ set number
 set diffopt+=iwhite
 
 " format settings
-set tabstop=2
+set tabstop=8
+set softtabstop=2
+set shiftwidth=2
 set expandtab
 set shiftwidth=2
+set foldmarker={,}
+set foldmethod=marker
 
 " some more setting
 set ruler
 set enc
-"set encoding=utf-8
+set encoding=utf-8
 set wildmenu
 set laststatus=2
 set clipboard=unnamedplus
+
 " Show partial commands in the last line of the screen
 set showcmd
 
@@ -93,3 +98,5 @@ au Syntax * RainbowParenthesesLoadBraces
 
 autocmd VimEnter * NERDTree
 autocmd VimEnter * Tagbar
+
+:command Bash :call ConqueTermVSplit() bash
