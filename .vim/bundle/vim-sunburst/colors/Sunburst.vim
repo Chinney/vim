@@ -98,7 +98,7 @@ hi cssValueLength ctermfg=68 ctermbg=NONE cterm=NONE guifg=#3387cc guibg=NONE gu
 hi cssCommonAttr ctermfg=167 ctermbg=NONE cterm=NONE guifg=#cf6a4c guibg=NONE gui=NONE
 hi cssBraces ctermfg=NONE ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
 
-hi DiffAdd cterm=none ctermfg=fg ctermbg=23 gui=none guifg=fg guibg=23
-hi DiffDelete cterm=none ctermfg=fg ctermbg=52 gui=none guifg=fg guibg=52
-hi DiffChange cterm=none ctermfg=fg ctermbg=60 gui=none guifg=fg guibg=6
-hi DiffText cterm=none ctermfg=fg ctermbg=23 gui=none guifg=fg guibg=23
+hi DiffAdd cterm=NONE ctermfg=NONE ctermbg=23 gui=none guifg=NONE guibg=23
+hi DiffDelete cterm=NONE ctermfg=NONE ctermbg=52 gui=none guifg=NONE guibg=52
+hi DiffChange cterm=NONE ctermfg=NONE ctermbg=60 gui=none guifg=NONE guibg=6
+hi DiffText cterm=NONE ctermfg=NONE ctermbg=23 gui=none guifg=NONE guibg=23
