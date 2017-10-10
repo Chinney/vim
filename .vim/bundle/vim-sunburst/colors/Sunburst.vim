@@ -102,3 +102,7 @@ hi DiffAdd cterm=NONE ctermfg=NONE ctermbg=23 gui=none guifg=NONE guibg=23
 hi DiffDelete cterm=NONE ctermfg=NONE ctermbg=52 gui=none guifg=NONE guibg=52
 hi DiffChange cterm=NONE ctermfg=NONE ctermbg=60 gui=none guifg=NONE guibg=6
 hi DiffText cterm=NONE ctermfg=NONE ctermbg=23 gui=none guifg=NONE guibg=23
+
+hi Folded cterm=none ctermfg=NONE ctermbg=23 gui=none guifg=fg guibg=23
+hi FoldColumn cterm=none ctermfg=NONE ctermbg=23 gui=none guifg=fg guibg=23
+
