@@ -12,21 +12,28 @@ Plugin 'gmarik/vundle'
 Plugin 'scrooloose/nerdtree' " file drawer, open with :NERDTreeToggle
 Plugin 'tpope/vim-fugitive' " the ultimate git helper
 Plugin 'bling/vim-airline'
-Plugin 'nfvs/vim-perforce'
 Plugin 'majutsushi/tagbar'
 Plugin 'Yggdroot/indentLine'
 Plugin 'gko/vim-coloresque'
 Plugin 'wkentaro/conque.vim'
 Plugin 'kien/rainbow_parentheses.vim'
 Plugin 'gabrielelana/vim-markdown'
+Plugin 'aur-archive/vim-genutils'
+Plugin 'lawrencejones/vim-multiselect'
+Plugin 'mhinz/vim-startify'
 Helptags
 
 let g:airline_powerline_fonts = 1
 let g:airline_theme = 'behelit'
+
 let g:tagbar_ctags_bin = '~/bin/ctags/ctags'
+
 let g:indentLine_color_term = 239
 let g:indentLine_char = '|'
 let g:indentLine_enabled = 1
+
+let g:NERDTreeDirArrowExpandable = '噍'
+let g:NERDTreeDirArrowCollapsible = '磱'
 
 call vundle#end()
 filetype plugin indent on
@@ -40,14 +47,14 @@ hi CursorColumn term=bold cterm=bold ctermbg=none
 hi ColorColumn ctermbg=darkgrey
 set cursorline
 set cursorcolumn
+set lcs=tab:»-,eol:¬,trail:.
+set list
+
 set sp=2>&1\|sed\ 's#^\.\./#'`wspath`'/#'\|tee
 
 if exists( '+colorcolumn' )
  set colorcolumn=111
 endif
-
-set lcs=tab:»-,eol:¬,trail:.
-set list
 
 set is
 
